@@ -1,0 +1,1054 @@
+fileFormatVersion: 2
+guid: 92c22d4d5fbb64c449731330ef23f44c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5581463050751153367
+    second: Basic Assets_0
+  - first:
+      213: 6148881897832299292
+    second: Basic Assets_1
+  - first:
+      213: -3806652833105025718
+    second: Basic Assets_2
+  - first:
+      213: -6266165135959504316
+    second: Basic Assets_3
+  - first:
+      213: -1900089893045052068
+    second: Basic Assets_4
+  - first:
+      213: -8378267041087319113
+    second: Basic Assets_5
+  - first:
+      213: -5423588360170438941
+    second: Basic Assets_6
+  - first:
+      213: -2006047877651581945
+    second: Basic Assets_7
+  - first:
+      213: -7281527353728032901
+    second: Basic Assets_8
+  - first:
+      213: -3808601612902094808
+    second: Basic Assets_9
+  - first:
+      213: 2249001739131975885
+    second: Basic Assets_10
+  - first:
+      213: 7086855394753365635
+    second: Basic Assets_11
+  - first:
+      213: 2351825733631762447
+    second: Basic Assets_12
+  - first:
+      213: -3038653278670306037
+    second: Basic Assets_13
+  - first:
+      213: -4019873726183154653
+    second: Basic Assets_14
+  - first:
+      213: 3759387577342159327
+    second: Basic Assets_15
+  - first:
+      213: 7566793856157639671
+    second: Basic Assets_16
+  - first:
+      213: 3273446082943084599
+    second: Basic Assets_17
+  - first:
+      213: 3595523199244128571
+    second: Basic Assets_18
+  - first:
+      213: 7797042537702187091
+    second: Basic Assets_19
+  - first:
+      213: -7534166190991008476
+    second: Basic Assets_20
+  - first:
+      213: 5124783130585575478
+    second: Basic Assets_21
+  - first:
+      213: -1819958379908867606
+    second: Basic Assets_22
+  - first:
+      213: -7762506675507678365
+    second: Basic Assets_23
+  - first:
+      213: 8574356690896738560
+    second: Basic Assets_24
+  - first:
+      213: 6306549762292328994
+    second: Basic Assets_25
+  - first:
+      213: -6980294708957904282
+    second: Basic Assets_26
+  - first:
+      213: 6734662137313842724
+    second: Basic Assets_27
+  - first:
+      213: 1921108563578357329
+    second: Basic Assets_28
+  - first:
+      213: -7324672714738824377
+    second: Basic Assets_29
+  - first:
+      213: -2071803567446026408
+    second: Basic Assets_30
+  - first:
+      213: 3919075005287528403
+    second: Basic Assets_31
+  - first:
+      213: -7150789081804607452
+    second: Basic Assets_32
+  - first:
+      213: -2023363407958219857
+    second: Basic Assets_33
+  - first:
+      213: -7823886746581196736
+    second: Basic Assets_34
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Basic Assets_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 758
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b620d5de8aa82b0800000000000000
+      internalID: -5581463050751153367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_1
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 758
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1bbf160287355550800000000000000
+      internalID: 6148881897832299292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_2
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 758
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a456a83ba6d0c2bc0800000000000000
+      internalID: -3806652833105025718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_3
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 758
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a4237220c1a09a0800000000000000
+      internalID: -6266165135959504316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_4
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 758
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d5db33f4681a5e0800000000000000
+      internalID: -1900089893045052068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_5
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 758
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b390ae148a6abb80800000000000000
+      internalID: -8378267041087319113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_6
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 758
+        width: 129
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eef8103f1b8bb4b0800000000000000
+      internalID: -5423588360170438941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_7
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 579
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704b62275161924e0800000000000000
+      internalID: -2006047877651581945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_8
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 579
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f10c27371d2fa90800000000000000
+      internalID: -7281527353728032901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_9
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 579
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828adfb0301252bc0800000000000000
+      internalID: -3808601612902094808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_10
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 579
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc872308a2f063f10800000000000000
+      internalID: 2249001739131975885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_11
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 579
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 386c5da0f61995260800000000000000
+      internalID: 7086855394753365635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_12
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 579
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f006eb25b0d53a020800000000000000
+      internalID: 2351825733631762447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_13
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 579
+        width: 121
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05c74941f884d5d0800000000000000
+      internalID: -3038653278670306037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_14
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 418
+        width: 118
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c5dece42a8638c0800000000000000
+      internalID: -4019873726183154653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_15
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 418
+        width: 118
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9ee7065170c2430800000000000000
+      internalID: 3759387577342159327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_16
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 418
+        width: 119
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f362ecebe6a20960800000000000000
+      internalID: 7566793856157639671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_17
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 418
+        width: 118
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73867357edd9d6d20800000000000000
+      internalID: 3273446082943084599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_18
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 418
+        width: 119
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b315f90cc4dd5e130800000000000000
+      internalID: 3595523199244128571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_19
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 418
+        width: 118
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3506956a0e8a43c60800000000000000
+      internalID: 7797042537702187091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_20
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 418
+        width: 119
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d193b54c3417790800000000000000
+      internalID: -7534166190991008476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_21
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 280
+        width: 109
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630b771ea13ee1740800000000000000
+      internalID: 5124783130585575478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_22
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 281
+        width: 110
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9598bfe753eb6e0800000000000000
+      internalID: -1819958379908867606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_23
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 280
+        width: 109
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36334cf5e49064490800000000000000
+      internalID: -7762506675507678365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_24
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 280
+        width: 110
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009d4624bfb3ef670800000000000000
+      internalID: 8574356690896738560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_25
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 280
+        width: 109
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a22c3689d558750800000000000000
+      internalID: 6306549762292328994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_26
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 281
+        width: 110
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662860502f2012f90800000000000000
+      internalID: -6980294708957904282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_27
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 280
+        width: 109
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4265dd83883567d50800000000000000
+      internalID: 6734662137313842724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_28
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 77
+        width: 109
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1568c036f0629aa10800000000000000
+      internalID: 1921108563578357329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_29
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 78
+        width: 109
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b0ff549f8895a90800000000000000
+      internalID: -7324672714738824377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_30
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 77
+        width: 109
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8571efdd1a97f33e0800000000000000
+      internalID: -2071803567446026408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_31
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 77
+        width: 109
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7764204f9536630800000000000000
+      internalID: 3919075005287528403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_32
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 77
+        width: 109
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4207b43773b43cc90800000000000000
+      internalID: -7150789081804607452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_33
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 79
+        width: 109
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3602163b19be3e0800000000000000
+      internalID: -2023363407958219857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Assets_34
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 77
+        width: 109
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040242be478fb6390800000000000000
+      internalID: -7823886746581196736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Basic Assets_0: -5581463050751153367
+      Basic Assets_1: 6148881897832299292
+      Basic Assets_10: 2249001739131975885
+      Basic Assets_11: 7086855394753365635
+      Basic Assets_12: 2351825733631762447
+      Basic Assets_13: -3038653278670306037
+      Basic Assets_14: -4019873726183154653
+      Basic Assets_15: 3759387577342159327
+      Basic Assets_16: 7566793856157639671
+      Basic Assets_17: 3273446082943084599
+      Basic Assets_18: 3595523199244128571
+      Basic Assets_19: 7797042537702187091
+      Basic Assets_2: -3806652833105025718
+      Basic Assets_20: -7534166190991008476
+      Basic Assets_21: 5124783130585575478
+      Basic Assets_22: -1819958379908867606
+      Basic Assets_23: -7762506675507678365
+      Basic Assets_24: 8574356690896738560
+      Basic Assets_25: 6306549762292328994
+      Basic Assets_26: -6980294708957904282
+      Basic Assets_27: 6734662137313842724
+      Basic Assets_28: 1921108563578357329
+      Basic Assets_29: -7324672714738824377
+      Basic Assets_3: -6266165135959504316
+      Basic Assets_30: -2071803567446026408
+      Basic Assets_31: 3919075005287528403
+      Basic Assets_32: -7150789081804607452
+      Basic Assets_33: -2023363407958219857
+      Basic Assets_34: -7823886746581196736
+      Basic Assets_4: -1900089893045052068
+      Basic Assets_5: -8378267041087319113
+      Basic Assets_6: -5423588360170438941
+      Basic Assets_7: -2006047877651581945
+      Basic Assets_8: -7281527353728032901
+      Basic Assets_9: -3808601612902094808
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
