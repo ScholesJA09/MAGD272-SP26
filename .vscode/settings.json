@@ -60,11 +60,11 @@
         "*.asset": "yaml",
         "*.meta": "yaml",
         "*.prefab": "yaml",
-        "*.unity": "yaml",
+        "*.unity": "yaml"
     },
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.patterns": {
-        "*.sln": "*.csproj",
+        "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "MAGD272-SP25.sln"
+    "dotnet.defaultSolution": "MAGD272-SP26.sln"
 }
