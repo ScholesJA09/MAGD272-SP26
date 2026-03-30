@@ -123,6 +123,12 @@ public class SceneController : MonoBehaviour
     // Quits the game
     public void quitGame()
     {
+        Debug.Log("Quit button pressed");
+
         Application.Quit();
+
+#if UNITY_EDITOR
+    UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 }

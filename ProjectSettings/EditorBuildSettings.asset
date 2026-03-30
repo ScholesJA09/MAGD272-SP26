@@ -5,12 +5,24 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DemoMainMenuSideView.unity
     guid: 36ef3f49895a9974fb745f74b128c0d2
   - enabled: 1
+    path: Assets/Scenes/DemoMainMenuTopDown.unity
+    guid: c97901c5e8130df42a53969253261f4f
+  - enabled: 0
+    path: Assets/Scenes/Assignment7SideViewScene2.unity
+    guid: df17b10544d96ab458009b3318f21dbc
+  - enabled: 0
     path: Assets/Scenes/Assignment7SideView.unity
     guid: 8d7f17afbb67ccb459f5b95a2b38db16
+  - enabled: 1
+    path: Assets/Scenes/Assignment7TopDown.unity
+    guid: 325e3314396435b489e7561dce1b9051
+  - enabled: 1
+    path: Assets/Scenes/Assignment7TopDownScene2.unity
+    guid: 72a01ef99645f37489c2ac49f13f9ba1
   - enabled: 1
     path: Assets/Scenes/Fail Scene.unity
     guid: 047693d357ed3c14d9c7825cab4a289d
