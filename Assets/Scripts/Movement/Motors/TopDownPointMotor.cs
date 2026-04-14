@@ -22,20 +22,32 @@ public class TopDownPointMotor : MonoBehaviour, IMove
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void FixedUpdate() {
-        Vector2 direction = new Vector2(destination.x - transform.position.x, destination.y - transform.position.y);
-        if (direction.sqrMagnitude > .01f) {
-            rb.linearVelocity = direction.normalized * speed;
-            UpdateAnimations(direction.normalized.x, direction.normalized.y);
+    void FixedUpdate()
+    {
+        // 1. Calculate horizontal distance only
+        float xDistance = destination.x - transform.position.x;
+        float stoppingDistance = 0.5f; // Adjust this if the slime "overshoots"
+
+        // 2. Check if we are far enough away to need to move
+        if (Mathf.Abs(xDistance) > stoppingDistance)
+        {
+            float moveDir = Mathf.Sign(xDistance);
+
+            // 3. Move horizontally but PRESERVE gravity (rb.linearVelocity.y)
+            rb.linearVelocity = new Vector2(moveDir * speed, rb.linearVelocity.y);
+
+            UpdateAnimations(moveDir, 0);
         }
-        else {
-            rb.linearVelocity = Vector2.zero;
+        else
+        {
+            // 4. We reached the point! Stop horizontal movement, keep gravity.
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
             UpdateAnimations(0, 0);
         }
     }
 
 
-    
+
 
     public void Move(Vector2 position){
         destination = position;

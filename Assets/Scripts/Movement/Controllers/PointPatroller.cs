@@ -17,33 +17,44 @@ public class PointPatroller : MonoBehaviour
         motor = GetComponent<IMove>();
     }
 
-    void FixedUpdate(){
+    void FixedUpdate()
+    {
+        if (patrolPath.Length < 2) return;
 
-        if (patrolPath.Length < 2) {
-            return;
-        }
+        // 1. Calculate the direction vector (Target - Current)
+        Vector2 targetPos = patrolPath[patrolIndex].position;
+        Vector2 currentPos = transform.position;
+        Vector2 moveDirection = targetPos - currentPos;
 
-        Vector2 difference = new Vector2(patrolPath[patrolIndex].position.x - transform.position.x, patrolPath[patrolIndex].position.y - transform.position.y);
-        if (difference.sqrMagnitude <= .1f) {
+        // 2. Check if we are close enough to the point
+        // Note: I increased this to .2f for better physics reliability
+        if (moveDirection.sqrMagnitude <= .2f)
+        {
             SetNewWayPoint();
         }
 
-        motor.Move(new Vector2(patrolPath[patrolIndex].position.x, patrolPath[patrolIndex].position.y));
-
+        // 3. PASS THE DIRECTION, NOT THE POSITION
+        motor.Move(moveDirection);
     }
 
-    void SetNewWayPoint() {
+    void SetNewWayPoint()
+    {
         patrolIndex += direction;
 
-        if (patrolIndex == patrolPath.Length && loop){
+        // Case 1: We reached the end of the list and we WANT to loop (P1 -> P2 -> P1)
+        if (patrolIndex >= patrolPath.Length && loop)
+        {
             patrolIndex = 0;
         }
-
-        if (patrolIndex == patrolPath.Length && !loop){
+        // Case 2: We reached the end of the list and we want to PING-PONG (Go backwards)
+        else if (patrolIndex >= patrolPath.Length && !loop)
+        {
             patrolIndex = patrolPath.Length - 2;
             direction = -1;
         }
-        else if (patrolIndex < 0) {
+        // Case 3: We reached the start of the list while going backwards
+        else if (patrolIndex < 0)
+        {
             patrolIndex = 1;
             direction = 1;
         }
