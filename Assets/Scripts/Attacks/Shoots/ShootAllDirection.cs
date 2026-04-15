@@ -113,7 +113,7 @@ public class ShootAllDirection : Attack
                     float y = Mathf.Sin(angleInRadians);
                     Vector2 directionVector = new Vector2(x, y);
                     print("directionVector: " + directionVector.normalized);
-                    
+
                     var spreadDirection = direction + directionVector;
                     print("spreadDirection: " + spreadDirection);
                     newSpreadshot.GetComponent<ProjectileMove>().setValues(this, projectileSpeed, liveTime,
@@ -124,20 +124,8 @@ public class ShootAllDirection : Attack
                     Debug.LogWarning(
                         "ProjectileMove component not found on " + projectile.name + ". This object will not move!");
                 }
-
-                // if (direction == Direction.left)
-                // {
-                //     newSpreadshot.transform.localRotation = transform.rotation;
-                // }
-                // else
-                // {
-                //     newSpreadshot.transform.localRotation = transform.rotation;
-                // }
-
-                // newSpreadshot.transform.localRotation = transform.rotation * Quaternion.Euler(new Vector3(0, 0, 12));
             }
         }
-
 
         yield return new WaitForSeconds(attackTime);
         attacking = false;
@@ -204,7 +192,6 @@ public class ShootAllDirection : Attack
         projectilePool.objectDestroyed();
     }
 
-
     protected Direction directionFromMouse(bool fourDirections)
     {
         Vector3 mouse = Input.mousePosition;
@@ -217,10 +204,6 @@ public class ShootAllDirection : Attack
 
     protected Direction directionFromVector2(bool fourDirections, Vector2 direct)
     {
-        // Takes a position and returns direction closest to it
-        // fourDirections = true;      returns Direction.left/right/up/down
-        // fourDirections = false;     returns Direction.left/right
-
         if (!fourDirections || Mathf.Abs(direct.x) >= Mathf.Abs(direct.y))
         {
             // left or right
