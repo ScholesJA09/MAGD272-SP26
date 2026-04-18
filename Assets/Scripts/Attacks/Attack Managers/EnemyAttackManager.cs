@@ -69,6 +69,7 @@ public class EnemyAttackManager : MonoBehaviour
         }
 
     }
+    float nextAttackTime = 0;
 
     void Update()
     {
@@ -76,17 +77,30 @@ public class EnemyAttackManager : MonoBehaviour
         {
             setPlayerReferenceAndAttacks();
         }
-        
-        if (needsCasting)
+
+        // 2. Wrap your attack logic in a timer check
+        if (Time.time >= nextAttackTime)
         {
-            if(checkDistance(attackRange, needsAllDirection) && !enemyAttack.attacking) StartCoroutine(enemyAttack.ExecuteAttack(enemyAttack.attackSpeed));
-        }
-        else
-        {
-            if (attacksEnabled && enemyAttack.enabled)
+            if (needsCasting)
             {
-                // execute attack
-                if (!enemyAttack.attacking) StartCoroutine(enemyAttack.ExecuteAttack(enemyAttack.attackSpeed));
+                if (checkDistance(attackRange, needsAllDirection) && !enemyAttack.attacking)
+                {
+                    StartCoroutine(enemyAttack.ExecuteAttack(enemyAttack.attackSpeed));
+                    // Set the next time the enemy is allowed to think about attacking
+                    nextAttackTime = Time.time + enemyAttack.attackSpeed + enemyAttack.cooldown;
+                }
+            }
+            else
+            {
+                if (attacksEnabled && enemyAttack.enabled)
+                {
+                    if (!enemyAttack.attacking)
+                    {
+                        StartCoroutine(enemyAttack.ExecuteAttack(enemyAttack.attackSpeed));
+                        // Set the next time the enemy is allowed to think about attacking
+                        nextAttackTime = Time.time + enemyAttack.attackSpeed + enemyAttack.cooldown;
+                    }
+                }
             }
         }
 

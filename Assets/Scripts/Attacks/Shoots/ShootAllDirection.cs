@@ -41,6 +41,12 @@ public class ShootAllDirection : Attack
 
     override public IEnumerator ExecuteAttack(float attackTime)
     {
+        // --- ADD THIS GATEKEEPER ---
+        // If the script is disabled or we are in the 'Invisible' state, DO NOT SHOOT
+        if (!this.enabled || myAnim.GetCurrentAnimatorStateInfo(0).IsName("Invisible"))
+            yield break;
+        // ---------------------------
+
         if (myAmmo)
         {
             if (!myAmmo.CheckForAmmo(1)) yield break;
@@ -48,6 +54,14 @@ public class ShootAllDirection : Attack
         }
 
         attacking = true;
+
+        // --- DEBUGGING THE NULL REFERENCE ---
+        if (attackOffset == null)
+        {
+            Debug.LogError("ATTACK OFFSET IS MISSING on " + gameObject.name + "! Fix this in the Inspector.");
+            attacking = false;
+            yield break;
+        }
 
         // get angle
         Vector2 direction;
