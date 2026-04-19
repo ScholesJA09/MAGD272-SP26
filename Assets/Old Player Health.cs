@@ -1,0 +1,120 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class PlayerHealth : Health
+{
+    // 1. ADD THIS: A static variable to hold health between scenes
+    private static int savedHealth = -1;
+
+    [Header("Does the player have UI to see their health?")]
+    [Tooltip("PREFABS: HealthBar, HealthIcons, HealthText (They go in the Canvas!)")]
+    public HealthUI healthUI;
+
+    [Header("Does the player start with full health?")]
+    public bool startsFullHealth = true;
+    int startingHealth = -1;
+
+    override protected void Awake()
+    {
+        // 2. ADD THIS: Prevents the player object from being deleted on scene change
+        DontDestroyOnLoad(gameObject);
+
+        if (maxHealth <= 0)
+        {
+            Debug.LogError(gameObject.name + " needs to start with more than 0 health! Setting health to 1...", gameObject);
+            maxHealth = 1;
+        }
+
+        dead = false;
+
+        // 3. ALTERED THIS: Check if we have a saved health value first
+        if (savedHealth != -1)
+        {
+            currentHealth = savedHealth;
+        }
+        else if (startsFullHealth)
+        {
+            currentHealth = maxHealth;
+        }
+
+        startingHealth = currentHealth;
+
+        // ADD THIS: Look for a HealthUI in the new scene if ours is missing
+        if (healthUI == null)
+        {
+            healthUI = FindObjectOfType<HealthUI>();
+        }
+
+        // Refresh the UI with our current health
+        if (healthUI != null)
+        {
+            healthUI.setHealth(maxHealth, currentHealth);
+        }
+    }
+
+    // 4. ADD THIS: Save the health whenever it changes
+    void Update()
+    {
+        savedHealth = currentHealth;
+    }
+
+    override public void TakeDamage(int amount)
+    {
+        print("taking damage: " + amount);
+        if (!isImmune && !dead && !immortal)
+        {
+            currentHealth -= amount;
+            savedHealth = currentHealth; // Save on damage
+            if (healthUI) healthUI.updateHealth(currentHealth);
+
+            if (currentHealth <= 0) WhenDead();
+            else StartCoroutine(ImmunityReset());
+
+            // trigger audio event
+            if (sound != null)
+                AudioManager.audioManager?.playAudio(sound, soundVolume);
+        }
+    }
+
+    override public void WhenDead()
+    {
+        if (!immortal)
+        {
+            dead = true;
+
+            foreach (ShootAllDirection a in GetComponents<ShootAllDirection>()) a.disablePool();
+
+            if (GetComponent<Animator>()) GetComponent<Animator>().SetBool("Death", true);
+
+            Respawn r = GetComponent<Respawn>();
+            if (r == null)
+            {
+                Debug.LogWarning("Respawn component not found. Reloading current scene.");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
+            else r.useRespawn();
+        }
+    }
+
+    public override void fillHealth(int fill)
+    {
+        if (!immortal)
+        {
+            if (currentHealth + fill > maxHealth) currentHealth = maxHealth;
+            else if (fill > 0) currentHealth += fill;
+            else Debug.LogError("Invalid heal amount.");
+
+            if (healthUI) healthUI.updateHealth(currentHealth);
+        }
+    }
+
+    override public void revive()
+    {
+        currentHealth = startingHealth;
+        if (healthUI) healthUI.setHealth(maxHealth, startingHealth);
+        if (GetComponent<Animator>()) GetComponent<Animator>().SetBool("Death", false);
+        dead = false;
+    }
+}

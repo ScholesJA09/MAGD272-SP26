@@ -3,69 +3,60 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerHealth : Health
+public class PlayerHealthNew : Health
 {
-    [Header("Does the player have UI to see their health?")][Tooltip("PREFABS: HealthBar, HealthIcons, HealthText (They go in the Canvas!)")]
+    [Header("Does the player have UI to see their health?")]
     public HealthUI healthUI;
 
     [Header("Does the player start with full health?")]
     public bool startsFullHealth = true;
-    int startingHealth = -1;
 
     override protected void Awake()
     {
-        if (maxHealth <= 0)
+        // 1. Ensure the GameManager exists
+        if (GameManager.Instance == null)
         {
-            Debug.LogError(gameObject.name + " needs to start with more than 0 health! Setting health to 1...", gameObject);
-            maxHealth = 1;
+            Debug.LogError("No GameManager found in scene! Health won't persist.");
+            return;
         }
 
-        dead = false;
-        if (startsFullHealth) currentHealth = startingHealth = maxHealth;
-        else startingHealth = currentHealth;
+        // 2. Setup Max Health
+        if (maxHealth <= 0) maxHealth = 10; // Default for HK-style
+        GameManager.Instance.maxHealth = maxHealth;
 
+        // 3. Sync Current Health
+        // If it's the start of the game (0), set to max. Otherwise, keep what's in the Manager.
+        if (GameManager.Instance.currentHealth <= 0 && startsFullHealth)
+        {
+            GameManager.Instance.currentHealth = maxHealth;
+        }
+
+        // Local variable sync (so the base 'Health' script stays happy)
+        currentHealth = GameManager.Instance.currentHealth;
+        dead = false;
+
+        // 4. Update UI
         if (healthUI)
         {
-           if (startsFullHealth) healthUI.setHealth(maxHealth);
-           else healthUI.setHealth(maxHealth, currentHealth);
+            healthUI.setHealth(maxHealth, currentHealth);
         }
-        else Debug.LogWarning("No UI set for player health. Player health will only be visible in the Inspector.");
     }
 
     override public void TakeDamage(int amount)
     {
-        print("taking damage: " + amount);
         if (!isImmune && !dead && !immortal)
         {
-            currentHealth -= amount;
+            // Update the Manager's value
+            GameManager.Instance.currentHealth -= amount;
+            currentHealth = GameManager.Instance.currentHealth; // Sync local copy
+
             if (healthUI) healthUI.updateHealth(currentHealth);
 
             if (currentHealth <= 0) WhenDead();
             else StartCoroutine(ImmunityReset());
 
-            // trigger audio event
             if (sound != null)
                 AudioManager.audioManager?.playAudio(sound, soundVolume);
-        }
-    }
-
-    override public void WhenDead()
-    {
-        if (!immortal)
-        {
-            dead = true;
-
-            foreach (ShootAllDirection a in GetComponents<ShootAllDirection>()) a.disablePool();
-
-            if (GetComponent<Animator>()) GetComponent<Animator>().SetBool("Death", true);
-
-            Respawn r = GetComponent<Respawn>();
-            if (r == null)
-            {
-                Debug.LogWarning("Respawn component not found. Reloading current scene.");
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            }
-            else r.useRespawn();
         }
     }
 
@@ -73,9 +64,10 @@ public class PlayerHealth : Health
     {
         if (!immortal)
         {
-            if (currentHealth + fill > maxHealth) currentHealth = maxHealth;
-            else if (fill > 0) currentHealth += fill;
-            else Debug.LogError("Invalid heal amount.");
+            // Update the Manager's value
+            int newHealth = GameManager.Instance.currentHealth + fill;
+            GameManager.Instance.currentHealth = Mathf.Clamp(newHealth, 0, maxHealth);
+            currentHealth = GameManager.Instance.currentHealth; // Sync local
 
             if (healthUI) healthUI.updateHealth(currentHealth);
         }
@@ -83,9 +75,14 @@ public class PlayerHealth : Health
 
     override public void revive()
     {
-        currentHealth = startingHealth;
-        if (healthUI) healthUI.setHealth(maxHealth, startingHealth);
+        // When reviving, we usually reset to full or a checkpoint value
+        GameManager.Instance.currentHealth = maxHealth;
+        currentHealth = maxHealth;
+
+        if (healthUI) healthUI.setHealth(maxHealth, currentHealth);
         if (GetComponent<Animator>()) GetComponent<Animator>().SetBool("Death", false);
         dead = false;
     }
+
+    // Keep your WhenDead() as is, or update to handle scene reloading through the transition
 }
