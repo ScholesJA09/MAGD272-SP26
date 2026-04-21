@@ -5,6 +5,7 @@ using Unity.Cinemachine; // Use 'using Cinemachine;' if you are on an older vers
 public class SceneChanger : MonoBehaviour
 {
     public string sceneToLoad;
+    public string spawnPointName;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -14,8 +15,16 @@ public class SceneChanger : MonoBehaviour
             // 1. Tell Unity: "When the next scene finishes loading, run the 'OnSceneLoaded' function"
             SceneManager.sceneLoaded += OnSceneLoaded;
 
-            // 2. Load the scene
-            SceneManager.LoadScene(sceneToLoad);
+            if (SceneTransition.Instance != null)
+            {
+                SceneTransition.Instance.LoadNextScene(sceneToLoad);
+            }
+            else
+            {
+                // Fallback: If for some reason the transition manager is missing, 
+                // load the scene normally so the game doesn't break.
+                SceneManager.LoadScene(sceneToLoad);
+            }
         }
     }
 
@@ -24,7 +33,7 @@ public class SceneChanger : MonoBehaviour
     {
         // 1. Locate the objects in the new scene
         GameObject player = GameObject.FindWithTag("Player");
-        GameObject spawnPoint = GameObject.Find("SpawnPoint");
+        GameObject spawnPoint = GameObject.Find(spawnPointName);
         CinemachineCamera vcam = FindFirstObjectByType<CinemachineCamera>();
 
         // 2. CHECK: If we found both the player and the spawn point...
