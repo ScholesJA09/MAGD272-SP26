@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Fallen Crown - Main Menu.unity
+    guid: 3666beb5889148e489b9eeb102305d11
+  - enabled: 1
     path: Assets/Scenes/Scene 1-Echoing Sanctuary.unity
     guid: dbc04327a1e56554fac6d45f73e015b3
   - enabled: 1
@@ -20,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene 5-The Burning Abyss.unity
     guid: a8294caaad0097e4b80c1cf65cad9eba
+  - enabled: 1
+    path: Assets/Scenes/Fallen Crown - Game Over.unity
+    guid: 8da8a31bf15ca3a40a446b70f8c1ff6d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
