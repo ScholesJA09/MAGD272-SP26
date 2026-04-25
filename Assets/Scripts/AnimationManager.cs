@@ -21,6 +21,8 @@ public class AnimationClipOverrides : List<KeyValuePair<AnimationClip, Animation
 [RequireComponent(typeof(Animator))]
 public class AnimationManager : MonoBehaviour
 {
+    int speedHash;
+
     [Header("Do you want me to flip?")]
     public bool doIFlip;
 
@@ -46,6 +48,8 @@ public class AnimationManager : MonoBehaviour
     protected AnimationClipOverrides clipOverrides;
     public void Start()
     {
+        speedHash = Animator.StringToHash("HorizontalSpeed");
+
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
 
@@ -76,13 +80,14 @@ public class AnimationManager : MonoBehaviour
     {
         if (doIFlip)
         {
-            if(animator.GetFloat("HorizontalSpeed") < 0)
+            float speed = animator.GetFloat(speedHash); // Uses the ID instead of string
+            if (speed < 0)
             {
-                sr.flipX = facingRight; 
+                sr.flipX = facingRight;
             }
-            else if(animator.GetFloat("HorizontalSpeed") > 0)
+            else if (speed > 0)
             {
-                sr.flipX = !facingRight;
+              sr.flipX = !facingRight;
             }
         }
     }

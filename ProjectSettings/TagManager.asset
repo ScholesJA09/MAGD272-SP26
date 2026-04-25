@@ -6,6 +6,7 @@ TagManager:
   tags:
   - lever
   - CheckPoint
+  - Collectible
   layers:
   - Default
   - TransparentFX

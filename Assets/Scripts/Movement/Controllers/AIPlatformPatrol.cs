@@ -28,6 +28,19 @@ public class AIPlatformPatrol : MonoBehaviour{
 
         gun = GetComponent<ShootAllDirection>();
         shootTimer = shootInterval;
+
+        // Optional debug warnings (VERY helpful)
+        if (motor == null)
+            Debug.LogWarning("IMove component missing on " + gameObject.name);
+
+        if (jumpMotor == null)
+            Debug.LogWarning("IJump component missing on " + gameObject.name);
+
+        if (sr == null)
+            Debug.LogWarning("SpriteRenderer missing on " + gameObject.name);
+
+        if (gun == null)
+            Debug.LogWarning("ShootAllDirection component missing on " + gameObject.name);
     }
 
     void Update() // Use Update for timers
@@ -36,7 +49,8 @@ public class AIPlatformPatrol : MonoBehaviour{
         if (shootTimer <= 0)
         {
             // This "pulls the trigger" on your gun script
-            StartCoroutine(gun.ExecuteAttack(0.5f));
+            //NULL ERROR BELOW
+            //StartCoroutine(gun.ExecuteAttack(0.5f));
             shootTimer = shootInterval;
         }
     }
