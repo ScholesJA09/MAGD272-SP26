@@ -242,7 +242,7 @@ TextureImporter:
       name: King_Run_3
       rect:
         serializedVersion: 2
-        x: 232
+        x: 234
         y: 0
         width: 78
         height: 58
@@ -330,7 +330,7 @@ TextureImporter:
       name: King_Run_7
       rect:
         serializedVersion: 2
-        x: 546
+        x: 545
         y: 0
         width: 78
         height: 58

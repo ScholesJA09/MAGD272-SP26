@@ -207,7 +207,7 @@ TextureImporter:
       name: King_Idle_1
       rect:
         serializedVersion: 2
-        x: 78
+        x: 79
         y: 0
         width: 78
         height: 58
@@ -229,7 +229,7 @@ TextureImporter:
       name: King_Idle_2
       rect:
         serializedVersion: 2
-        x: 156
+        x: 152
         y: 0
         width: 78
         height: 58
@@ -251,7 +251,7 @@ TextureImporter:
       name: King_Idle_4
       rect:
         serializedVersion: 2
-        x: 234
+        x: 233
         y: 0
         width: 78
         height: 58
@@ -273,7 +273,7 @@ TextureImporter:
       name: King_Idle_5
       rect:
         serializedVersion: 2
-        x: 312
+        x: 317
         y: 0
         width: 78
         height: 58
@@ -295,7 +295,7 @@ TextureImporter:
       name: King_Idle_6
       rect:
         serializedVersion: 2
-        x: 390
+        x: 388
         y: 0
         width: 78
         height: 58
@@ -317,7 +317,7 @@ TextureImporter:
       name: King_Idle_7
       rect:
         serializedVersion: 2
-        x: 468
+        x: 471
         y: 0
         width: 78
         height: 58
@@ -339,7 +339,7 @@ TextureImporter:
       name: King_Idle_8
       rect:
         serializedVersion: 2
-        x: 544
+        x: 549
         y: 0
         width: 78
         height: 58
@@ -383,7 +383,7 @@ TextureImporter:
       name: King_Idle_10
       rect:
         serializedVersion: 2
-        x: 700
+        x: 702
         y: 0
         width: 78
         height: 58
