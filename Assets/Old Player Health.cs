@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : Health
 {
+    [Header("Audio Settings")]
+    public AudioClip healSound;
+    public float healVolume = 1f;
+
     // 1. ADD THIS: A static variable to hold health between scenes
     private static int savedHealth = -1;
 
@@ -102,11 +106,28 @@ public class PlayerHealth : Health
     {
         if (!immortal)
         {
-            if (currentHealth + fill > maxHealth) currentHealth = maxHealth;
-            else if (fill > 0) currentHealth += fill;
-            else Debug.LogError("Invalid heal amount.");
+            // 1. Check if the player actually needs healing
+            if (currentHealth < maxHealth)
+            {
+                // 2. Perform the heal
+                if (currentHealth + fill > maxHealth)
+                    currentHealth = maxHealth;
+                else if (fill > 0)
+                    currentHealth += fill;
+                else
+                    Debug.LogError("Invalid heal amount.");
 
-            if (healthUI) healthUI.updateHealth(currentHealth);
+                // 3. Play the sound ONLY because we actually healed
+                if (healSound != null)
+                {
+                    AudioManager.audioManager?.playAudio(healSound, healVolume);
+                }
+
+                // 4. Update the UI and Save
+                if (healthUI) healthUI.updateHealth(currentHealth);
+                // If you removed Update(), make sure you save here:
+                // savedHealth = currentHealth; 
+            }
         }
     }
 
