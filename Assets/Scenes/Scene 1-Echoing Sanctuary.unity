@@ -2584,7 +2584,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439808866}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 349ca92a71f1b36488171a9eb93b4c31, type: 3}
   m_Name: 
@@ -2805,7 +2805,7 @@ GameObject:
   - component: {fileID: 522451988}
   - component: {fileID: 522451987}
   - component: {fileID: 522451989}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Background_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6099,7 +6099,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1360444138}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -6126,8 +6126,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0073377034, y: 0.36163998}
-  m_Radius: 0.0951647
+  m_Offset: {x: 0.03765021, y: 0.27502966}
+  m_Radius: 0.11076577
 --- !u!1 &1404345392
 GameObject:
   m_ObjectHideFlags: 0
@@ -6513,7 +6513,7 @@ TilemapCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: bad82e0616d9fb94781086f0d3fbb5a3, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -77364,7 +77364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 40505557179221503, guid: 5764565d644bccb4a9b413305b3b1414, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 40505557179221503, guid: 5764565d644bccb4a9b413305b3b1414, type: 3}
       propertyPath: m_SortingLayer
