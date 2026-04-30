@@ -7,6 +7,7 @@ TagManager:
   - lever
   - CheckPoint
   - Collectible
+  - Powerup
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - Enemy
   - Ground
   - Camera Collider
-  - 
-  - 
+  - Weapon
+  - EnemyProjectile
   - 
   - 
   - 
