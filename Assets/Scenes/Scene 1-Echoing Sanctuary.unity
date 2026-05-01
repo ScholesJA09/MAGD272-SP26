@@ -6035,6 +6035,7 @@ GameObject:
   - component: {fileID: 1307687624}
   - component: {fileID: 1307687623}
   - component: {fileID: 1307687638}
+  - component: {fileID: 1307687639}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -6169,8 +6170,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CollectibleManager
   coinsCollected: 0
   showCoins: 0
-  coinsCollectedGoal: 0
-  coinGoalAmount: 0
+  coinsCollectedGoal: 1
+  coinGoalAmount: 3
   ammoCollected: 0
   showAmmo: 0
   coinCount: {fileID: 0}
@@ -6178,7 +6179,7 @@ MonoBehaviour:
   keyCollected: 0
   keyImage: {fileID: 0}
   showKey: 0
-  coinSound: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: 163d095b828a13840aaed47e02021b86, type: 3}
   ammoSound: {fileID: 0}
   healthSound: {fileID: 0}
   keySound: {fileID: 0}
@@ -6410,6 +6411,44 @@ MonoBehaviour:
   healVolume: 1
   healthUI: {fileID: 1454803860}
   startsFullHealth: 1
+--- !u!114 &1307687639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307687622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdd7ef20b6f616f4eb0281a1d0b2b0d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollectibleManager
+  coinsCollected: 0
+  showCoins: 0
+  coinsCollectedGoal: 0
+  coinGoalAmount: 0
+  ammoCollected: 0
+  showAmmo: 0
+  coinCount: {fileID: 0}
+  ammoCount: {fileID: 0}
+  keyCollected: 0
+  keyImage: {fileID: 0}
+  showKey: 0
+  coinSound: {fileID: 0}
+  ammoSound: {fileID: 0}
+  healthSound: {fileID: 0}
+  keySound: {fileID: 0}
+  soundVolume: 1
+  playSound: 0
+  goalSound: {fileID: 0}
+  volume: 1
+  changeScene: 0
+  sceneChangeDelay: 0
+  sceneName: 
+  enableAnObject: 0
+  TargetObject: {fileID: 0}
+  DisableAtStart: 0
+  completed: 0
 --- !u!1 &1334009747
 GameObject:
   m_ObjectHideFlags: 0
@@ -79323,6 +79362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneChanger
   sceneToLoad: Scene 2-Stonebreak Caverns
   spawnPointName: SpawnPointFromScene1
+  requiresKeys: 0
 --- !u!1001 &2100209119
 PrefabInstance:
   m_ObjectHideFlags: 0

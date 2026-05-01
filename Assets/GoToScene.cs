@@ -1,18 +1,34 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Unity.Cinemachine; // Use 'using Cinemachine;' if you are on an older version of Unity
+using Unity.Cinemachine;
 
 public class SceneChanger : MonoBehaviour
 {
+    [Header("Destination Settings")]
     public string sceneToLoad;
     public string spawnPointName;
 
+    [Header("Gate Settings")]
+    public bool requiresKeys = false; // Check this ONLY for the boss door
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Check if the thing hitting the box is the Player
         if (other.CompareTag("Player"))
         {
-            // 1. Tell Unity: "When the next scene finishes loading, run the 'OnSceneLoaded' function"
+            // 1. If this is a locked door, check the CollectibleManager
+            if (requiresKeys)
+            {
+                CollectibleManager manager = other.GetComponent<CollectibleManager>();
+
+                // If goal isn't met, block the transition
+                if (manager != null && !manager.completed)
+                {
+                    Debug.Log("Door is locked! Collect all keys (coins) first.");
+                    return;
+                }
+            }
+
+            // 2. Proceed to load scene
             SceneManager.sceneLoaded += OnSceneLoaded;
 
             if (SceneTransition.Instance != null)
@@ -21,38 +37,29 @@ public class SceneChanger : MonoBehaviour
             }
             else
             {
-                // Fallback: If for some reason the transition manager is missing, 
-                // load the scene normally so the game doesn't break.
                 SceneManager.LoadScene(sceneToLoad);
             }
         }
     }
 
-    // This part runs ONLY after the new scene is ready
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // 1. Locate the objects in the new scene
         GameObject player = GameObject.FindWithTag("Player");
         GameObject spawnPoint = GameObject.Find(spawnPointName);
         CinemachineCamera vcam = FindFirstObjectByType<CinemachineCamera>();
 
-        // 2. CHECK: If we found both the player and the spawn point...
         if (player != null && spawnPoint != null)
         {
-            // --- PUT THE NEW LINE HERE ---
             player.transform.position = spawnPoint.transform.position;
-            // -----------------------------
-
-            Debug.Log("Player moved to: " + spawnPoint.name);
+            Debug.Log("Player moved to spawn point: " + spawnPoint.name);
         }
 
-        // 3. Set up the camera
         if (vcam != null && player != null)
         {
             vcam.Follow = player.transform;
         }
 
-        // Always unsubscribe at the end
+        // Unsubscribe to prevent memory leaks or double-firing
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }

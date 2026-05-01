@@ -8,7 +8,8 @@
 //    [Header("Health icon when full")]
 //    public Sprite healthIcon;
 
-//    [Header("Health icon when empty")][Tooltip("If nothing here, icons will turn off instead")]
+//    [Header("Health icon when empty")]
+//    [Tooltip("If nothing here, icons will turn off instead")]
 //    public Sprite emptyIcon;
 
 //    Image[] icons;
@@ -38,7 +39,7 @@
 //            while (currentIcon < maxHealth - 1)
 //            {
 //                currentIcon++;
-//                if(turningOffIcons) icons[currentIcon].gameObject.SetActive(true);
+//                if (turningOffIcons) icons[currentIcon].gameObject.SetActive(true);
 //                else icons[currentIcon].sprite = healthIcon;
 //            }
 //        }
@@ -85,7 +86,7 @@
 //        currentHealth = newHealth;
 //    }
 
-//        Image createNewIcon()
+//    Image createNewIcon()
 //    {
 //        GameObject temp = new GameObject("HealthIcon " + currentIcon);
 //        temp.AddComponent<RectTransform>();

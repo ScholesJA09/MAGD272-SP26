@@ -3116,6 +3116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneChanger
   sceneToLoad: Scene 2-Stonebreak Caverns
   spawnPointName: SpawnPointFromScene4
+  requiresKeys: 0
 --- !u!61 &536543613
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6155,6 +6156,91 @@ Transform:
   - {fileID: 36954577}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1046799421
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 129080083510378496, guid: 2e30895654f9bb34ba2f32fedad96209, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 129080083510378496, guid: 2e30895654f9bb34ba2f32fedad96209, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -109863257
+      objectReference: {fileID: 0}
+    - target: {fileID: 4595674312674246538, guid: 2e30895654f9bb34ba2f32fedad96209, type: 3}
+      propertyPath: type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4595674312674246538, guid: 2e30895654f9bb34ba2f32fedad96209, type: 3}
+      propertyPath: amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6537624967828148455, guid: 2e30895654f9bb34ba2f32fedad96209, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5627
+      objectReference: {fileID: 0}
+    - target: {fileID: 6537624967828148455, guid: 2e30895654f9bb34ba2f32fedad96209, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.5627
+      objectReference: {fileID: 0}
+    - target: {fileID: 6537624967828148455, guid: 2e30895654f9bb34ba2f32fedad96209, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.5627
+      objectReference: {fileID: 0}
+    - target: {fileID: 6537624967828148455, guid: 2e30895654f9bb34ba2f32fedad96209, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 6537624967828148455, guid: 2e30895654f9bb34ba2f32fedad96209, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 194.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 6537624967828148455, guid: 2e30895654f9bb34ba2f32fedad96209, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6537624967828148455, guid: 2e30895654f9bb34ba2f32fedad96209, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6537624967828148455, guid: 2e30895654f9bb34ba2f32fedad96209, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6537624967828148455, guid: 2e30895654f9bb34ba2f32fedad96209, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6537624967828148455, guid: 2e30895654f9bb34ba2f32fedad96209, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6537624967828148455, guid: 2e30895654f9bb34ba2f32fedad96209, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6537624967828148455, guid: 2e30895654f9bb34ba2f32fedad96209, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6537624967828148455, guid: 2e30895654f9bb34ba2f32fedad96209, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8613588311438165322, guid: 2e30895654f9bb34ba2f32fedad96209, type: 3}
+      propertyPath: m_Name
+      value: Key
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2e30895654f9bb34ba2f32fedad96209, type: 3}
 --- !u!1 &1058371055
 GameObject:
   m_ObjectHideFlags: 0
@@ -92358,7 +92444,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1880474697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93889,3 +93975,4 @@ SceneRoots:
   - {fileID: 519291591}
   - {fileID: 1012612487}
   - {fileID: 1880474713}
+  - {fileID: 1046799421}
