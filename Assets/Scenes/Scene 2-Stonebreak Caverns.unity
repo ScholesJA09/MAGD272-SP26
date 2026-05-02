@@ -13536,7 +13536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249a16b08d48b754e8c7e5854e9b2aaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneChanger
-  sceneToLoad: Scene 5-The Burning Abyss
+  sceneToLoad: Scene 5-The Vault of Soverigns
   spawnPointName: SpawnPointFromScene2
   requiresKeys: 1
 --- !u!61 &1919670612

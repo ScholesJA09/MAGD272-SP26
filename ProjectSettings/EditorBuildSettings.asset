@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene 4-Frostspire Ascent.unity
     guid: f9f5771773f1b65429672a796db42ca0
   - enabled: 1
-    path: Assets/Scenes/Scene 5-The Burning Abyss.unity
+    path: Assets/Scenes/Scene 5-The Vault of Soverigns.unity
     guid: a8294caaad0097e4b80c1cf65cad9eba
   - enabled: 1
     path: Assets/Scenes/Fallen Crown - Game Over.unity
