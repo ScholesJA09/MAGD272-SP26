@@ -238,6 +238,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7421134922706112034}
+  - component: {fileID: 4810525989897813425}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -268,6 +269,24 @@ RectTransform:
   m_AnchoredPosition: {x: -651.27, y: 465.9}
   m_SizeDelta: {x: 579.9187, y: 90.93634}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &4810525989897813425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7421134922706112033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbb498ee23f28724fadfec54f3cd7967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthBarUI
+  healthBarFill: {fileID: 0}
+  healthText: {fileID: 0}
+  colorChange: 0
+  percentHealthLow: 25
+  slowBar: 0
+  fillSpeed: 6
 --- !u!1 &7421134922708895962
 GameObject:
   m_ObjectHideFlags: 0
