@@ -1864,8 +1864,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250537129}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.52, y: -3.11375, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.5199966, y: -3.1137524, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2210,14 +2210,14 @@ RectTransform:
   m_GameObject: {fileID: 290833602}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.3961067, y: 2.3961067, z: 2.3961067}
+  m_LocalScale: {x: 4.090394, y: 4.090394, z: 4.090394}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1229145798}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: 122}
+  m_AnchoredPosition: {x: 3, y: 219}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &290833604
@@ -2409,7 +2409,7 @@ Transform:
   m_GameObject: {fileID: 294922033}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -95, y: 29.2, z: -10}
+  m_LocalPosition: {x: 22.3, y: 15.9, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2541,12 +2541,28 @@ PrefabInstance:
       propertyPath: MainMenuSceneName
       value: Fallen Crown - Main Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 1650827455744497157, guid: 7c9d85304bd754ea2b8ebd043f05f218, type: 3}
+      propertyPath: currentSceneIndex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5605006677586594130, guid: 7c9d85304bd754ea2b8ebd043f05f218, type: 3}
       propertyPath: m_Name
       value: SceneController
       objectReference: {fileID: 0}
     - target: {fileID: 5605006677586594130, guid: 7c9d85304bd754ea2b8ebd043f05f218, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8639151713643988294, guid: 7c9d85304bd754ea2b8ebd043f05f218, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8639151713643988294, guid: 7c9d85304bd754ea2b8ebd043f05f218, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8639151713643988294, guid: 7c9d85304bd754ea2b8ebd043f05f218, type: 3}
+      propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8639151713643988294, guid: 7c9d85304bd754ea2b8ebd043f05f218, type: 3}
@@ -2567,15 +2583,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8639151713643988294, guid: 7c9d85304bd754ea2b8ebd043f05f218, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8639151713643988294, guid: 7c9d85304bd754ea2b8ebd043f05f218, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8639151713643988294, guid: 7c9d85304bd754ea2b8ebd043f05f218, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8639151713643988294, guid: 7c9d85304bd754ea2b8ebd043f05f218, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3091,7 +3107,7 @@ Transform:
   m_GameObject: {fileID: 650147251}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -95.00001, y: 29.200005, z: -10}
+  m_LocalPosition: {x: 22.300001, y: 15.900002, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4637,7 +4653,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 957415847}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5428,7 +5444,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -5472,8 +5488,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 824333724}
-  - {fileID: 1644456528}
   - {fileID: 290833603}
+  - {fileID: 1644456528}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6377,7 +6393,7 @@ Transform:
   m_GameObject: {fileID: 1307687622}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -95, y: 24.2, z: 0}
+  m_LocalPosition: {x: 22.3, y: 10.9, z: 0}
   m_LocalScale: {x: 2.9178932, y: 2.9178932, z: 2.9178932}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -76749,9 +76765,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644456527}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.6491824, y: 1.6491824, z: 1.6491824}
+  m_LocalScale: {x: 3.0020068, y: 3.0020068, z: 3.0020068}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 193716490}
@@ -76759,7 +76775,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: -57}
+  m_AnchoredPosition: {x: -0.99997467, y: -122.000015}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1644456529
@@ -76806,7 +76822,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1825091288}
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
         m_MethodName: loadMainMenu
         m_Mode: 1
@@ -76815,7 +76831,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Fallen Crown - Main Menu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1644456530
@@ -78260,6 +78276,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1825091288 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1650827455744497157, guid: 7c9d85304bd754ea2b8ebd043f05f218, type: 3}
+  m_PrefabInstance: {fileID: 400757996}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77dce041ccc044279824bea0b3aef92e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1827735317
 GameObject:
   m_ObjectHideFlags: 0
@@ -79913,9 +79940,11 @@ SceneRoots:
   m_Roots:
   - {fileID: 650147254}
   - {fileID: 294922037}
-  - {fileID: 400757996}
   - {fileID: 250537131}
+  - {fileID: 400757996}
+  - {fileID: 957415850}
   - {fileID: 1229145798}
+  - {fileID: 1307687637}
   - {fileID: 1774126483}
   - {fileID: 1656521548}
   - {fileID: 1740588376}
@@ -79928,12 +79957,10 @@ SceneRoots:
   - {fileID: 245453265}
   - {fileID: 1132253816}
   - {fileID: 1646093667}
-  - {fileID: 1307687637}
   - {fileID: 1691962958}
   - {fileID: 1235147382}
   - {fileID: 735667217}
   - {fileID: 2077075867}
-  - {fileID: 957415850}
   - {fileID: 1065416209}
   - {fileID: 1830096501}
   - {fileID: 256879715}
