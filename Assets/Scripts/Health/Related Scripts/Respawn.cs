@@ -129,4 +129,6 @@ public class Respawn : MonoBehaviour
         Debug.LogError("Error; no active checkpoints found.", gameObject);
         return Vector2.zero;
     }
+
+
 }
