@@ -23,26 +23,26 @@ public class Respawn : MonoBehaviour
     [Header("Does dying cause time to stop?")]
     public bool stopTime = false;
 
-    List<CheckPoint> checkPoints;
+    //List<CheckPoint> checkPoints;
 
     private void Awake()
     {
-        if(!reloadScene)
-        {
-            checkPoints = new List<CheckPoint>();
+        //if(!reloadScene)
+        //{
+        //    checkPoints = new List<CheckPoint>();
 
-            GameObject temp = new GameObject("SpawnPoint");
-            temp.transform.position = transform.position;
-            temp.AddComponent<CheckPoint>();
-            temp.GetComponent<CheckPoint>().active = temp.GetComponent<CheckPoint>().used = true;
-            temp.tag = "CheckPoint";
-            checkPoints.Add(temp.GetComponent<CheckPoint>());
+        //    GameObject temp = new GameObject("SpawnPoint");
+        //    temp.transform.position = transform.position;
+        //    temp.AddComponent<CheckPoint>();
+        //    temp.GetComponent<CheckPoint>().active = temp.GetComponent<CheckPoint>().used = true;
+        //    temp.tag = "CheckPoint";
+        //    checkPoints.Add(temp.GetComponent<CheckPoint>());
 
-            foreach (CheckPoint a in FindObjectsOfType<CheckPoint>()) if(a != temp.GetComponent<CheckPoint>()) checkPoints.Add(a);
+        //    foreach (CheckPoint a in FindObjectsOfType<CheckPoint>()) if(a != temp.GetComponent<CheckPoint>()) checkPoints.Add(a);
 
-            if(checkPoints.Count > 1) Debug.Log(checkPoints.Count + " checkpoints found.", gameObject);
-            else Debug.LogWarning("No respawn checkpoints found. Adding player spawnpoint as only checkpoint...", gameObject);
-        }
+        //    if(checkPoints.Count > 1) Debug.Log(checkPoints.Count + " checkpoints found.", gameObject);
+        //    else Debug.LogWarning("No respawn checkpoints found. Adding player spawnpoint as only checkpoint...", gameObject);
+        //}
 
         if(respawnTime < 0)
         {
@@ -91,12 +91,12 @@ public class Respawn : MonoBehaviour
             // other respawn things
             GetComponent<PlayerHealth>().revive();
 
-            foreach (IMovingPlatform plat in GameObject.FindObjectsOfType<MovingPlatform>()) plat.resetPosition();
-            foreach (IMovingPlatform plat in GameObject.FindObjectsOfType<MovingPlatformWithPoints>()) plat.resetPosition();
+            //foreach (IMovingPlatform plat in GameObject.FindObjectsOfType<MovingPlatform>()) plat.resetPosition();
+            //foreach (IMovingPlatform plat in GameObject.FindObjectsOfType<MovingPlatformWithPoints>()) plat.resetPosition();
 
             if (deathScreen) deathScreen.SetActive(false);
 
-            transform.position = getActiveCheckpoint();
+            //transform.position = getActiveCheckpoint();
         }
     }
 
@@ -120,15 +120,15 @@ public class Respawn : MonoBehaviour
 
     public void unactivateCheckpoints()
     {
-        foreach (CheckPoint a in checkPoints) a.active = false;
+    ////    foreach (CheckPoint a in checkPoints) a.active = false;
     }
 
-    Vector2 getActiveCheckpoint()
-    {
-        foreach (CheckPoint a in checkPoints) if (a.active) return a.transform.position;
-        Debug.LogError("Error; no active checkpoints found.", gameObject);
-        return Vector2.zero;
-    }
+    //Vector2 getActiveCheckpoint()
+    //{
+    ////    foreach (CheckPoint a in checkPoints) if (a.active) return a.transform.position;
+    ////    Debug.LogError("Error; no active checkpoints found.", gameObject);
+    ////    return Vector2.zero;
+    //}
 
 
 }
