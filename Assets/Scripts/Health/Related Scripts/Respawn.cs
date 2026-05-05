@@ -23,6 +23,9 @@ public class Respawn : MonoBehaviour
     [Header("Does dying cause time to stop?")]
     public bool stopTime = false;
 
+    [Header("Override Dont Destroy If Dead")]
+    public bool overrideDDoL = true;
+
     //List<CheckPoint> checkPoints;
 
     private void Awake()
@@ -97,6 +100,10 @@ public class Respawn : MonoBehaviour
             if (deathScreen) deathScreen.SetActive(false);
 
             //transform.position = getActiveCheckpoint();
+        }
+        if (overrideDDoL)
+        {
+            Destroy(gameObject);
         }
     }
 

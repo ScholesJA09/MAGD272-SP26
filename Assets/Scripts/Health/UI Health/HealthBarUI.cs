@@ -61,6 +61,7 @@ public class HealthBarUI : HealthUI // base below
 
     public override void updateHealth(int newHealth)
     {
+        Debug.Log("update Health Called! - ");
         if (newHealth < 0) newHealth = 0;
         else if (newHealth > maxHealth) newHealth = maxHealth;
         else if (newHealth == currentHealth) return;

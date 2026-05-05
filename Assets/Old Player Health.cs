@@ -20,6 +20,8 @@ public class PlayerHealth : Health
     public bool startsFullHealth = true;
     int startingHealth = -1;
 
+    public static PlayerHealth instance;
+
     override protected void Awake()
     {
         // 2. ADD THIS: Prevents the player object from being deleted on scene change
@@ -48,13 +50,24 @@ public class PlayerHealth : Health
         // ADD THIS: Look for a HealthUI in the new scene if ours is missing
         if (healthUI == null)
         {
-            healthUI = FindObjectOfType<HealthUI>();
+            healthUI = GetComponentInChildren<HealthUI>();
+            //healthUI = FindObjectOfType<HealthUI>();
         }
 
         // Refresh the UI with our current health
         if (healthUI != null)
         {
             healthUI.setHealth(maxHealth, currentHealth);
+        }
+    }
+
+    void Start()
+    {
+        if(currentHealth <= 0)
+        {
+            Debug.Log("O health!");
+            currentHealth = maxHealth;
+            healthUI.updateHealth(currentHealth);
         }
     }
 
