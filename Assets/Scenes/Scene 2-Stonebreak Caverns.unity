@@ -6167,7 +6167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bea4926172f1cd8499cff2d67d60a18e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animators: []
+  animators:
+  - {fileID: 610503309}
   <speed>k__BackingField: 5
 --- !u!114 &610503315
 MonoBehaviour:
