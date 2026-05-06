@@ -808,7 +808,7 @@ MonoBehaviour:
   spreadshot: 0
   numSpreadShots: 4
   spreadWidth: 10
-  FollowsPlayer: 0
+  FollowsPlayer: 1
   ShootsAllDirections: 0
 --- !u!50 &85533015
 Rigidbody2D:
@@ -5121,7 +5121,7 @@ MonoBehaviour:
   spreadshot: 0
   numSpreadShots: 4
   spreadWidth: 10
-  FollowsPlayer: 0
+  FollowsPlayer: 1
   ShootsAllDirections: 0
 --- !u!50 &720301014
 Rigidbody2D:
@@ -218223,7 +218223,7 @@ MonoBehaviour:
   spreadshot: 0
   numSpreadShots: 4
   spreadWidth: 10
-  FollowsPlayer: 0
+  FollowsPlayer: 1
   ShootsAllDirections: 0
 --- !u!50 &747665057
 Rigidbody2D:
@@ -219080,7 +219080,7 @@ MonoBehaviour:
   spreadshot: 0
   numSpreadShots: 4
   spreadWidth: 10
-  FollowsPlayer: 0
+  FollowsPlayer: 1
   ShootsAllDirections: 0
 --- !u!50 &910420223
 Rigidbody2D:
@@ -221496,7 +221496,7 @@ MonoBehaviour:
   spreadshot: 0
   numSpreadShots: 4
   spreadWidth: 10
-  FollowsPlayer: 0
+  FollowsPlayer: 1
   ShootsAllDirections: 0
 --- !u!50 &1149696179
 Rigidbody2D:
@@ -224908,7 +224908,7 @@ MonoBehaviour:
   spreadshot: 0
   numSpreadShots: 4
   spreadWidth: 10
-  FollowsPlayer: 0
+  FollowsPlayer: 1
   ShootsAllDirections: 0
 --- !u!50 &1593488411
 Rigidbody2D:

@@ -7,9 +7,26 @@ public class FacePlayer : MonoBehaviour
 
     void Update()
     {
+        // 1. Check if the player reference is missing
+        if (player == null)
+        {
+            FindPlayer();
+        }
+
+        // 2. Only run logic if we successfully found a player
         if (player != null)
         {
             CheckDirection();
+        }
+    }
+
+    void FindPlayer()
+    {
+        // Search for the GameObject tagged "Player"
+        GameObject playerObj = GameObject.FindWithTag("Player");
+        if (playerObj != null)
+        {
+            player = playerObj.transform;
         }
     }
 

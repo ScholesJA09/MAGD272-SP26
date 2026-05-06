@@ -3218,7 +3218,7 @@ MonoBehaviour:
   spreadshot: 0
   numSpreadShots: 4
   spreadWidth: 10
-  FollowsPlayer: 0
+  FollowsPlayer: 1
   ShootsAllDirections: 0
 --- !u!50 &519291582
 Rigidbody2D:
@@ -4320,7 +4320,7 @@ Transform:
   m_GameObject: {fileID: 700043801}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.074077, y: 0.97999895, z: -10}
+  m_LocalPosition: {x: -8.97597, y: 0.97999895, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6426,7 +6426,7 @@ MonoBehaviour:
   spreadshot: 0
   numSpreadShots: 4
   spreadWidth: 10
-  FollowsPlayer: 0
+  FollowsPlayer: 1
   ShootsAllDirections: 0
 --- !u!50 &1012612478
 Rigidbody2D:
@@ -8292,7 +8292,7 @@ MonoBehaviour:
   spreadshot: 0
   numSpreadShots: 4
   spreadWidth: 10
-  FollowsPlayer: 0
+  FollowsPlayer: 1
   ShootsAllDirections: 0
 --- !u!50 &1404650575
 Rigidbody2D:

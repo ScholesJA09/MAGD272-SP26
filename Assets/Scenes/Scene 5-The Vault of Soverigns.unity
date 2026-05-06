@@ -86068,7 +86068,7 @@ MonoBehaviour:
   spreadshot: 0
   numSpreadShots: 4
   spreadWidth: 10
-  FollowsPlayer: 0
+  FollowsPlayer: 1
   ShootsAllDirections: 0
 --- !u!50 &453417177
 Rigidbody2D:
@@ -90400,7 +90400,7 @@ MonoBehaviour:
   spreadshot: 0
   numSpreadShots: 4
   spreadWidth: 10
-  FollowsPlayer: 0
+  FollowsPlayer: 1
   ShootsAllDirections: 0
 --- !u!50 &1932758210
 Rigidbody2D:
