@@ -164,4 +164,9 @@ public class PlayerHealth : Health
         if (GetComponent<Animator>()) GetComponent<Animator>().SetBool("Death", false);
         dead = false;
     }
+
+    public bool CanHeal()
+    {
+        return currentHealth < maxHealth;
+    }
 }
