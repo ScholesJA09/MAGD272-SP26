@@ -2540,7 +2540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1befad689f23aa41b569d55ac56c842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoomTrigger
-  roomName: Collected Cave Key
+  roomName: Collected Stone Key
   roomTitleUI: {fileID: 807748184}
 --- !u!114 &164456517
 MonoBehaviour:
@@ -5768,7 +5768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a52bae236e32e945a58e3760cd9ac21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
-  key: 27
+  key: 112
   timeStop: 1
   pauseScreen: {fileID: 208307250}
 --- !u!4 &592471118
@@ -8587,7 +8587,7 @@ GameObject:
   - component: {fileID: 807748185}
   - component: {fileID: 807748184}
   m_Layer: 5
-  m_Name: Cave Key
+  m_Name: Stone Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8640,7 +8640,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Collected Cave Key
+  m_text: 'Collected Stone Key
 
 '
   m_isRightToLeft: 0

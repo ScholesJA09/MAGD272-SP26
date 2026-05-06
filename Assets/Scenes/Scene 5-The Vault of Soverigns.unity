@@ -90947,7 +90947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a52bae236e32e945a58e3760cd9ac21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
-  key: 27
+  key: 112
   timeStop: 1
   pauseScreen: {fileID: 1504971240}
 --- !u!4 &2057562182
