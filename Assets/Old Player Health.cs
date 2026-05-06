@@ -74,6 +74,19 @@ public class PlayerHealth : Health
     // 4. ADD THIS: Save the health whenever it changes
     void Update()
     {
+        // 1. Check if we are in the Main Menu
+        // Replace "MainMenu" with the EXACT name of your menu scene
+        if (SceneManager.GetActiveScene().name == "Fallen Crown - Main Menu" || SceneManager.GetActiveScene().name == "Fallen Crown - Win")
+        {
+            // Reset the static instance so it doesn't point to a dead object
+            instance = null;
+            savedHealth = -1;
+
+            Destroy(gameObject);
+            return; // Stop running the rest of the code
+        }
+
+        // 2. Your existing update logic
         savedHealth = currentHealth;
     }
 

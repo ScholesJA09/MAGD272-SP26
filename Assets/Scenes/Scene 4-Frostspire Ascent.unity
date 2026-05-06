@@ -93356,11 +93356,11 @@ GameObject:
   - component: {fileID: 1880474704}
   - component: {fileID: 1880474703}
   - component: {fileID: 1880474702}
-  - component: {fileID: 1880474701}
   - component: {fileID: 1880474700}
   - component: {fileID: 1880474699}
   - component: {fileID: 1880474698}
   - component: {fileID: 1880474697}
+  - component: {fileID: 1880474714}
   m_Layer: 6
   m_Name: Ghost Enemy
   m_TagString: Untagged
@@ -93518,19 +93518,6 @@ MonoBehaviour:
   spreadshot: 0
   numSpreadShots: 4
   spreadWidth: 10
---- !u!114 &1880474701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1880474696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d0a050f4da5bd144a7acecaefc2741a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyDamage
-  damage: 2
 --- !u!114 &1880474702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93844,6 +93831,19 @@ Transform:
   - {fileID: 1957361629}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1880474714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880474696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ba0150e725e11f4aa99ae77ec708b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NoTriggerEnemyDamage
+  damage: 2
 --- !u!1 &1904351538
 GameObject:
   m_ObjectHideFlags: 0
